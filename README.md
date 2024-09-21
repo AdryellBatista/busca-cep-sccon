@@ -17,8 +17,8 @@ Siga os passos abaixo para configurar o projeto localmente:
 1. Clone o repositório:
 
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-do-diretorio>
+   git clone https://github.com/AdryellBatista/busca-cep-sccon.git
+   cd busca-cep-sccon
 
 
 2. Instale as dependências do projeto:
