@@ -1,4 +1,4 @@
-# Angular Project
+# Teste SCCON
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 13.2.1, utilizando o Node.js versão 14.21.3. O projeto também faz uso das bibliotecas Angular Material, Bootstrap e ngx-mask.
 
