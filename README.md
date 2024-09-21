@@ -6,4 +6,3 @@ Porojeto gerado com [Angular CLI](https://github.com/angular/angular-cli) na ver
 
 execute `npm install` para baixar as dependências.
 execute `ng serve` para subir a aplicação.
-
