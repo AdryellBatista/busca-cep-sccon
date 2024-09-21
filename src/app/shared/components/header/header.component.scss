@@ -1,0 +1,60 @@
+.navbar-custom {
+    background-color: var(--color-brand-primary);
+    height: 90px;
+    padding: var(--spacing-xxs) var(--spacing-huge);
+    font-size: var(--font-size-xs);
+    @media only screen and (max-width: 767px)  {
+        padding: var(--spacing-xxs);
+    }
+    .nav-link {
+        color: var(--color-brand-secondary);
+        &:hover {
+            filter: brightness(0.94);
+        }
+    }
+    .logo { 
+        width: var(--spacing-md);
+    }
+    
+    .nav-item {
+        margin-left: var(--spacing-sm);
+
+        mat-icon {
+            margin-top: -3px;
+        }
+    }
+
+    .menu-mobile {
+        background: var(--color-brand-primary);
+        color: #fff;
+        position: fixed;
+        width: 100vw;
+        top: 90px;
+        left: 0;
+        min-height: 250px;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+::ng-deep {
+    .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+        font-size: 20px;
+        color: var(--color-brand-secondary) !important;
+        cursor: pointer;
+        &:hover {
+            filter: brightness(0.94);
+        }
+    }
+}
+.sticky {
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 5;
+    
+}

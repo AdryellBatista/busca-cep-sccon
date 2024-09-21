@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky justify-content-between">
+    <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo-sccon.svg" alt="logo" class="logo">
+    </a>
+    
+    <button  class="navbar-toggler" type="button" data-toggle="collapse" (click)="showMenuMobile=!showMenuMobile;">
+      <span *ngIf="!showMenuMobile" class="navbar-toggler-icon"></span>
+      <mat-icon *ngIf="showMenuMobile">close</mat-icon>
+    </button>
+  
+    <div #navbarSupportedContent class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <button class="nav-link" mat-button routerLink="/home">Home</button>
+        </li>
+
+        <li class="nav-item dropdown">
+            <button class="nav-link d-flex" mat-button [matMenuTriggerFor]="menu">
+                Endereços
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="address">Buscar Endereços</button>
+            </mat-menu>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-mobile" *ngIf="showMenuMobile" [@toggle]="showMenuMobile">
+        <mat-list role="list">
+            <mat-list-item role="listitem" routerLink="/home" (click)="showMenuMobile=!showMenuMobile">Home</mat-list-item>
+            <mat-list-item role="listitem" routerLink="address" (click)="showMenuMobile=!showMenuMobile">Buscar Endereços</mat-list-item>
+        </mat-list>
+    </div>
+    
+</nav>

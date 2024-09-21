@@ -1,0 +1,24 @@
+#home {
+    .baner {
+        background-image: url(../../../assets/images/banner-home.png);
+        background-position: center top;
+        background-repeat: no-repeat;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 95vh;
+        text-align: center;
+        padding: 20px;
+        .title {
+            color: var(--color-brand-primary);
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        .subtitle {
+            font-size: 20px;
+        } 
+    }
+}
