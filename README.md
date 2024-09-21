@@ -26,7 +26,9 @@ Siga os passos abaixo para configurar o projeto localmente:
    ```bash
    npm install
 
-3.Execute ng serve para iniciar um servidor de desenvolvimento. Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você modificar qualquer um dos arquivos fonte.
+3. Execute ng serve para iniciar um servidor de desenvolvimento. Navegue para http://localhost:4200/. A aplicação será recarregada automaticamente se você modificar qualquer um dos arquivos fonte.
 
- ```bash
+   ```bash
    ng serve
+
+   
